@@ -1,0 +1,1 @@
+This repository contains output from Kamran Chowdhury's PhD project on current wind-stress feedback (CFB) coupling onto the atmosphere. All rigorous data analysis is handled on FSU's High-Performance Computing cluster.
