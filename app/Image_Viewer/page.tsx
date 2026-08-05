@@ -30,42 +30,13 @@ export default function Home() {
       </nav>
 
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
-        {/* Hero Section */}
-        <section className="py-20 md:py-32 space-y-8 relative">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/20 text-cyan-400 text-xs font-bold tracking-widest uppercase animate-pulse">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,1)]" />
-              READY TO LAUNCH
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-              BUILD YOUR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">DEVELOPER PORTFOLIO</span> <br />
-              IN MINUTES
-            </h1>
-          </div>
-          <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
-            A beginner-friendly portfolio template that showcases your projects beautifully. Fork it, customize it, deploy it—no design skills required.
-          </p>
-          <div className="pt-8 flex gap-6">
-            <Link 
-              href="#work" 
-              className="group relative px-8 py-3 bg-cyan-950/30 border border-cyan-500/50 text-cyan-300 font-bold tracking-widest uppercase text-sm overflow-hidden hover:bg-cyan-900/50 transition-all hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                GET STARTED <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
-            </Link>
-          </div>
-        </section>
-
         {/* Selected Work */}
         <section id="work" className="py-20 space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
             <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
-              // YOUR_PROJECTS
+              // IMAGE VIEWER
             </h2>
-            <span className="text-xs font-mono text-cyan-700">Showcase what you&apos;ve built with style</span>
+            <span className="text-xs font-mono text-cyan-700">Select binning category.</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -101,55 +72,6 @@ export default function Home() {
               color="yellow"
               href="#"
             />
-          </div>
-        </section>
-
-        {/* Philosophy / Approach */}
-        <section id="philosophy" className="py-20 grid md:grid-cols-12 gap-12 border-t border-cyan-900/30">
-          <div className="md:col-span-4 space-y-8">
-            <h2 className="text-2xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)]">
-              {"// ABOUT_ME"}
-            </h2>
-            
-            {/* Profile Image - Replace src with your image in /public */}
-            <div className="relative w-full aspect-[4/5] border border-cyan-500/30 rounded-sm overflow-hidden bg-cyan-950/30 group">
-              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgba(5,5,16,0.8)_100%)] z-10" />
-              {/* Scanline effect */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(34,211,238,0.05)_1px,transparent_1px)] bg-[size:100%_4px] z-20 pointer-events-none" />
-              
-              <Image 
-                src={`${basePath}/me.png`}
-                alt="Profile"
-                fill
-                className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
-              />
-            </div>
-          </div>
-          <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light">
-            <p>
-              A Meteorology PhD graduate student at FSU starting to take data analysis visualization to the next level. <strong className="text-fuchsia-400 font-bold">This starts with organizing websites on GitHub with friendly UIs.</strong> More to follow in the near future!
-            </p>
-            <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-cyan-500" />
-              <div className="grid grid-cols-2 gap-8 font-mono text-sm">
-                <div>
-                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">STACK_TRACE</h3>
-                  <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JavaScript / Python / TypeScript</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> React / Next.js / Node.js</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Git / GitHub / VS Code</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">PROTOCOLS</h3>
-                  <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Always learning</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Ship &gt; Perfect</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Open source contributor</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
