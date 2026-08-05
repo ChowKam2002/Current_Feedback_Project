@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
-            A beginner-friendly portfolio template that showcases your projects beautifully. Fork it, customize it, deploy it—no design skills required.
+            The beginnings of Kamran's research output website. Extensive comparisons of model simulations and analyses to come.
           </p>
           <div className="pt-8 flex gap-6">
             <Link 
