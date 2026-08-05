@@ -71,9 +71,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
-              title="PROJECT_ONE"
-              description="Your first amazing project goes here. Describe what problem it solves and the tech you used to build it."
-              tags={["REACT", "NEXTJS", "TAILWIND"]}
+              title="Current Feedback Atmospheric States Comparison"
+              description="This links to a page that will allow seemless comparisons of a CFB atmosphere to a NoCFB atmosphere, in context with the ocean."
+              tags={["Current Feedback Project", "PhD"]}
               color="cyan"
               href="#"
             />
