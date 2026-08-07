@@ -39,6 +39,17 @@ export default function Home() {
             <span className="text-xs font-mono text-cyan-700">Select binning category.</span>
           </div>
 
+          <div className="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <Image src="/All/VertDiv" alt="Div"/>
+              <Image src="/All/VertVort" alt="Vort"/>
+              <Image src="/All/VertU" alt="U"/>
+              <Image src="/All/VertV" alt="V"/>
+              <Image src="/All/VertW" alt="W"/>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
