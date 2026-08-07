@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <div className="dropdown">
-            <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+            <button onClick="toggleDropdown()" class="dropbtn">Dropdown</button>
             <div id="myDropdown" class="dropdown-content">
               <Image src="/All/VertDiv" alt="Div"/>
               <Image src="/All/VertVort" alt="Vort"/>
