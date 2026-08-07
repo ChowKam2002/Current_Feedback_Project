@@ -43,13 +43,6 @@ export default function Home() {
           // Initial image source
           const [imgSrc, setImgSrc] = useState("/All/VertDiv.png");
 
-          // Function to toggle between images
-          //const toggleImage = () => {
-          //  setImgSrc((prev) =>
-          //  prev === "/All/VertDiv.png" ? "/All/VertVort.png" : "/All/VertW.png"
-          //  );
-          //};
-
           return (
             <div style={{ textAlign: "center", padding: "2rem" }}>
               <h3>CFB Image</h3>
