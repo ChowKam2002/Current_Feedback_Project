@@ -75,7 +75,7 @@ export default function Home() {
               description="This links to a page that will allow seemless comparisons of a CFB atmosphere to a NoCFB atmosphere, in context with the ocean."
               tags={["Current Feedback Project", "PhD"]}
               color="cyan"
-              href="#"
+              href="/Image_Viewer"
             />
             {/* Project 2 */}
             <ProjectCard 
