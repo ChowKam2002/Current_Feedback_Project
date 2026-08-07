@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
 
@@ -39,16 +40,54 @@ export default function Home() {
             <span className="text-xs font-mono text-cyan-700">Select binning category.</span>
           </div>
 
-          <div className="dropdown">
-            <button onClick="toggleDropdown()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-              <Image src="/All/VertDiv" alt="Div"/>
-              <Image src="/All/VertVort" alt="Vort"/>
-              <Image src="/All/VertU" alt="U"/>
-              <Image src="/All/VertV" alt="V"/>
-              <Image src="/All/VertW" alt="W"/>
+          // Initial image source
+          const [imgSrc, setImgSrc] = useState("/All/VertDiv.png");
+
+          // Function to toggle between images
+          const toggleImage = () => {
+            setImgSrc((prev) =>
+            prev === "/All/VertDiv.png" ? "/All/VertVort.png" : "/All/VertW.png"
+            );
+          };
+
+          return (
+            <div style={{ textAlign: "center", padding: "2rem" }}>
+              <h3>CFB Image</h3>
+
+              {/* Next.js optimized image */}
+              <Image
+                src={imgSrc}
+                alt="Dynamic example"
+                width={400}
+                height={300}
+                priority
+              />
+
+              <br />
+              <button
+                onClick={toggleImage}
+                style={{
+                  marginTop: "1rem",
+                  padding: "0.5rem 1rem",
+                  fontSize: "1rem",
+                  cursor: "pointer",
+                }}
+              >
+                Change Image
+              </button>
             </div>
-          </div>
+          );
+
+          //<div className="dropdown">
+          //  <button onClick="toggleDropdown()" class="dropbtn">Dropdown</button>
+          //  <div id="myDropdown" class="dropdown-content">
+          //    <Image src="/All/VertDiv" alt="Div"/>
+          //    <Image src="/All/VertVort" alt="Vort"/>
+          //    <Image src="/All/VertU" alt="U"/>
+          //    <Image src="/All/VertV" alt="V"/>
+          //    <Image src="/All/VertW" alt="W"/>
+          //  </div>
+          //</div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
