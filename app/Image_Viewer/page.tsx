@@ -1,6 +1,7 @@
+"use client"; // Required for stateful components in App Router
+
 import Image from "next/image";
 import Link from "next/link";
-"use client"; // Required for stateful components in App Router
 import { useState } from "react";
 
 const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
