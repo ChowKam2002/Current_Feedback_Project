@@ -47,9 +47,7 @@ export default function Home() {
 
           // Function to toggle between images
           const toggleImage = () = {
-            setImgSrc((prev) =>
-              prev === "/images/pic1.jpg" ? "/images/pic2.jpg" : "/images/pic1.jpg"
-            );
+            setImgSrc((prev) => prev === "/images/pic1.jpg" ? "/images/pic2.jpg" : "/images/pic1.jpg");
           };
 
           return (
