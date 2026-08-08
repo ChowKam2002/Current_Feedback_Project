@@ -46,7 +46,7 @@ export default function Home() {
           const [imgSrc, setImgSrc] = useState("/All/VertDiv.png");
 
           // Function to toggle between images
-          const toggleImage = () => {
+          const toggleImage = () = {
             setImgSrc((prev) =>
               prev === "/images/pic1.jpg" ? "/images/pic2.jpg" : "/images/pic1.jpg"
             );
