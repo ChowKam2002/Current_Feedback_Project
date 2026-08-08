@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function Home() {
   // Initial image source
-  const [imgSrc, setImgSrc] = useState("/images/pic1.jpg");
+  const [imgSrc, setImgSrc] = useState("/All/VertVort.png");
 
   // Function to toggle between images
   const toggleImage = () => {
     setImgSrc((prev) =>
-      prev === "/images/pic1.jpg" ? "/images/pic2.jpg" : "/images/pic1.jpg"
+      prev === "/All/VertVort.png" ? "/All/VertDiv.png" : "/All/VertVort.png"
     );
   };
 
