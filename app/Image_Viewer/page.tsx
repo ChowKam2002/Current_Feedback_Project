@@ -5,18 +5,18 @@ import Image from "next/image";
 
 export default function Home() {
   // Initial image source
-  const [imgSrc, setImgSrc] = useState("/All/VertVort.png");
+  const [imgSrc, setImgSrc] = useState("/public/images/All/VertVort.png");
 
   // Function to toggle between images
   const toggleImage = () => {
     setImgSrc((prev) =>
-      prev === "/All/VertVort.png" ? "/All/VertDiv.png" : "/All/VertVort.png"
+      prev === "/public/images/All/VertVort.png" ? "/public/images/All/VertDiv.png" : "/public/images/All/VertVort.png"
     );
   };
 
   return (
     <div style={{ textAlign: "center", padding: "2rem" }}>
-      <h1>Update-able Image Example</h1>
+      <h1>CFB Image</h1>
 
       {/* Next.js optimized image */}
       <Image
