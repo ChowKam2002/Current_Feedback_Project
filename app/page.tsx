@@ -118,7 +118,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(34,211,238,0.05)_1px,transparent_1px)] bg-[size:100%_4px] z-20 pointer-events-none" />
               
               <Image 
-                src={`${basePath}/me.png`}
+                src={`${basePath}/All/VertVort.png`}
                 alt="Profile"
                 fill
                 className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
